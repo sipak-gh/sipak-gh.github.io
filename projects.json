@@ -28,6 +28,11 @@
       "blurb": "Single-purpose utilities for the terminal."
     },
     {
+      "id": "web",
+      "title": "Web Apps",
+      "blurb": "Browser tools with no server and no build step."
+    },
+    {
       "id": "learning",
       "title": "Educational Content",
       "blurb": "I build courses to deepen my own expertise, because teaching a subject end to end is the best test of understanding it, and I share them freely with the community."
@@ -103,6 +108,13 @@
         "CSV decks",
         "SQLite"
       ]
+    },
+    {
+      "repo": "webreader",
+      "category": "web",
+      "title": "Web Reader",
+      "summary": "A private EPUB reader that runs entirely in your browser. Open a book from your device or a link, and it remembers your place. Nothing is uploaded, and a ?source= link opens a book directly.",
+      "highlights": ["EPUB", "no server", "no dependencies", "shareable ?source= links"]
     },
     {
       "repo": "courseware",

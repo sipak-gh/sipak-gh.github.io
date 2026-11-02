@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T15:35:50Z",
+  "generated": "2026-11-02T18:22:22Z",
   "owner": "sipak-gh",
   "profile": {
     "name": "sipak",
@@ -21,6 +21,11 @@
       "id": "cli",
       "title": "Command-Line Tools",
       "blurb": "Single-purpose utilities for the terminal."
+    },
+    {
+      "id": "web",
+      "title": "Web Apps",
+      "blurb": "Browser tools with no server and no build step."
     },
     {
       "id": "learning",
@@ -172,6 +177,30 @@
       "order": 5
     },
     {
+      "repo": "webreader",
+      "title": "Web Reader",
+      "summary": "A private EPUB reader that runs entirely in your browser. Open a book from your device or a link, and it remembers your place. Nothing is uploaded, and a ?source= link opens a book directly.",
+      "highlights": [
+        "EPUB",
+        "no server",
+        "no dependencies",
+        "shareable ?source= links"
+      ],
+      "description": "a fully in browser ereader app. saves state to your browser so you dont lose your progress. Bring your own epubs.",
+      "language": "JavaScript",
+      "branch": "master",
+      "homepage": "https://sipak-gh.github.io/webreader/",
+      "stars": 0,
+      "createdAt": "2026-11-02T17:31:26Z",
+      "pushedAt": "2026-11-02T17:56:36Z",
+      "license": null,
+      "archived": false,
+      "category": "web",
+      "readme": "README.md",
+      "accent": "#e3b341",
+      "order": 6
+    },
+    {
       "repo": "courseware",
       "title": "Courseware",
       "summary": "My learn-* courses, collected and readable as books. Each one is written to master a subject properly, from C, assembly and Zig to Go, React and philosophy, and is published openly so anyone can learn alongside me.",
@@ -186,13 +215,13 @@
       "homepage": "https://sipak-gh.github.io/courseware/",
       "stars": 0,
       "createdAt": "2026-10-31T17:07:44Z",
-      "pushedAt": "2026-11-02T14:25:50Z",
+      "pushedAt": "2026-11-02T17:34:32Z",
       "license": null,
       "archived": false,
       "category": "learning",
       "readme": "README.md",
       "accent": "#e3b341",
-      "order": 6
+      "order": 7
     }
   ]
 }

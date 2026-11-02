@@ -1,0 +1,119 @@
+{
+  "owner": "sipak-gh",
+  "profile": {
+    "name": "sipak",
+    "headline": "Things I'm building.",
+    "about": "Small, sharp software, mostly close to the metal: a Forth in assembly, bare-metal firmware, terminal editors, and command-line tools that do one thing well. Each project is short enough to read in a sitting."
+  },
+  "ignore": [
+    "learn-*",
+    "parc-public",
+    "sipak-gh.github.io",
+    "resume"
+  ],
+  "categories": [
+    {
+      "id": "metal",
+      "title": "Systems & Bare Metal",
+      "blurb": "No runtime, no libc, sometimes no operating system."
+    },
+    {
+      "id": "editors",
+      "title": "Editors",
+      "blurb": "Modal text editors in the vi tradition, kept deliberately small."
+    },
+    {
+      "id": "cli",
+      "title": "Command-Line Tools",
+      "blurb": "Single-purpose utilities for the terminal."
+    },
+    {
+      "id": "learning",
+      "title": "Educational Content",
+      "blurb": "I build courses to deepen my own expertise, because teaching a subject end to end is the best test of understanding it, and I share them freely with the community."
+    }
+  ],
+  "projects": [
+    {
+      "repo": "nasmforth",
+      "category": "metal",
+      "title": "NASMForth",
+      "summary": "A minimal Forth interpreter in a single x86-64 NASM source file for Linux. It uses raw syscalls instead of libc and builds to a ~9 KB binary.",
+      "highlights": [
+        "x86-64 Linux",
+        "no libc",
+        "~9 KB binary",
+        "fuzzed against a Python model"
+      ]
+    },
+    {
+      "repo": "esp32-firmware",
+      "category": "metal",
+      "title": "ESP32 Bare-Metal Firmware",
+      "summary": "A hands-on course in ESP32 firmware at the lowest level. It ends with a 208-byte Xtensa assembly image that the mask ROM boots directly, with no SDK, C or RTOS, plus a custom image packer verified against Espressif's tool.",
+      "highlights": [
+        "Xtensa LX6",
+        "208-byte image",
+        "QEMU",
+        "FreeRTOS lab"
+      ]
+    },
+    {
+      "repo": "zen",
+      "category": "editors",
+      "title": "zen",
+      "summary": "ze is a small modal editor for the Linux terminal. It implements a minimal subset of vi and nothing more, so the whole program can be read in one sitting and owned by its user.",
+      "highlights": [
+        "vi subset",
+        "Linux terminal",
+        "comment dimming",
+        "undo / redo"
+      ]
+    },
+    {
+      "repo": "vibabel",
+      "category": "editors",
+      "title": "vibabel",
+      "summary": "A vi-style editor for writing pages of Borges' Library of Babel. Each page is located by its hexagon, wall, shelf, book and page, and saved under a page ID derived from that address.",
+      "highlights": [
+        "40 × 80 page grid",
+        "address ↔ page ID",
+        "vi keys"
+      ]
+    },
+    {
+      "repo": "parc",
+      "category": "cli",
+      "title": "parc",
+      "summary": "parc (public archiver) encrypts files and their names with your SSH key. You can keep them in a public git repo, bucket or web server without revealing what they contain or what they're called.",
+      "highlights": [
+        "age",
+        "ed25519 SSH keys",
+        "encrypted filenames",
+        "inspect by URL"
+      ]
+    },
+    {
+      "repo": "MemSRS",
+      "category": "cli",
+      "title": "MemSRS",
+      "summary": "Terminal flashcards with spaced repetition. It reads plain CSV decks, schedules cards with an Anki-style ease/interval algorithm, and saves progress to SQLite after every card.",
+      "highlights": [
+        "spaced repetition",
+        "CSV decks",
+        "SQLite"
+      ]
+    },
+    {
+      "repo": "courseware",
+      "category": "learning",
+      "title": "Courseware",
+      "summary": "My learn-* courses, collected and readable as books. Each one is written to master a subject properly, from C, assembly and Zig to Go, React and philosophy, and is published openly so anyone can learn alongside me.",
+      "highlights": [
+        "free & open",
+        "learn by building",
+        "systems to philosophy"
+      ]
+    }
+  ]
+}

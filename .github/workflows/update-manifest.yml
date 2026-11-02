@@ -1,0 +1,51 @@
+name: Update manifest
+
+# Rebuilds manifest.json from projects.json plus live GitHub metadata
+# (description, language, license, last push, ...). Runs weekly, whenever
+# projects.json or the generator changes, and on demand.
+on:
+  schedule:
+    - cron: "0 7 * * 1"   # Mondays, 07:00 UTC
+  push:
+    branches: [master]
+    paths:
+      - projects.json
+      - gen_manifest.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-manifest
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Regenerate manifest
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 gen_manifest.py
+
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- manifest.json; then
+            echo "manifest.json is unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add manifest.json
+          git commit -m "chore: update manifest ($(date -u +%Y-%m-%d))"
+          git push

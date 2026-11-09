@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T18:22:22Z",
+  "generated": "2026-11-09T16:58:01Z",
   "owner": "sipak-gh",
   "profile": {
     "name": "sipak",
@@ -192,7 +192,7 @@
       "homepage": "https://sipak-gh.github.io/webreader/",
       "stars": 0,
       "createdAt": "2026-11-02T17:31:26Z",
-      "pushedAt": "2026-11-02T17:56:36Z",
+      "pushedAt": "2026-11-03T00:17:13Z",
       "license": null,
       "archived": false,
       "category": "web",
@@ -215,7 +215,7 @@
       "homepage": "https://sipak-gh.github.io/courseware/",
       "stars": 0,
       "createdAt": "2026-10-31T17:07:44Z",
-      "pushedAt": "2026-11-02T17:34:32Z",
+      "pushedAt": "2026-11-08T14:49:51Z",
       "license": null,
       "archived": false,
       "category": "learning",
